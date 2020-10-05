@@ -1,0 +1,582 @@
+:root {
+  --socialesBar: 90px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Utils */
+.full-viewport {
+  display: inline-flex;
+  float: left;
+  height: 100vh;
+  width: 100vw;
+}
+
+.kanu-cta {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.kanu-cta:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+}
+
+.cta-one:hover {
+  color: #ffffff;
+  background: #003b4a;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mobile-hide {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Main Section */
+.main-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#header-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#header-slider .swiper-wrapper {
+  display: flex;
+  width: (3 * 100) vw; /* Amount of slides * 100 */
+}
+
+#header-slider .swiper-slide {
+  background-size: cover;
+}
+
+#mainSlide-1 {
+  background-image: url(../images/main-slider/1.jpg);
+}
+
+#mainSlide-2 {
+  background-image: url(../images/main-slider/2.jpg);
+}
+
+#mainSlide-3 {
+  background-image: url(../images/main-slider/3.jpg);
+}
+
+/* Header box */
+.logo-block {
+  position: absolute;
+  background: rgba(28, 28, 27, 0.6);
+  padding-top: 8vh;
+  padding-left: 10vw;
+  height: 100vh;
+  width: 34vw;
+  left: 0;
+  top: 0;
+}
+
+.logo-block > * {
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 14vw;
+}
+
+.linea {
+  border-left: 2px #cdcece solid;
+  height: 30vh;
+}
+
+.slogan {
+  color: #cdcece;
+  letter-spacing: 10pt;
+  text-transform: uppercase;
+  font-size: 15pt;
+}
+
+.slogan span {
+  margin-bottom: 20px;
+}
+
+.slogan span:nth-child(2) {
+  font-weight: 900;
+}
+
+.logo-block a {
+  color: #cdcece;
+  border: 1px #cdcece solid;
+  display: block;
+  height: 50px;
+  line-height: 45px;
+  width: 250px;
+  text-align: center;
+}
+
+/* Socials */
+.sociales {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  width: var(--socialesBar);
+}
+
+.sociales > * {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sociales a img {
+  display: inline;
+ 
+}
+
+.facebook {
+  padding: 15px;
+}
+
+/*cta-pedido- first*/
+.cta-pedidos {
+  background: rgb(28, 28, 27);
+  display: flex;
+  justify-content: center;
+  width: var(--socialesBar);
+  height: var(--socialesBar);
+  align-items: center;
+}
+
+.cta-pedidos img {
+  width: 35px;
+  margin-bottom: 15px;
+}
+
+.cta-pedidos span {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* Menu */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 30px;
+  right: 180px;
+}
+
+.menu-container a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-left: 70px;
+  transition: all 0.5s;
+}
+
+.menu-container a:hover {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Section: About us */
+.about-container {
+  padding: 400px 500px;
+  background: #1a1a1a;
+  position: relative;
+}
+
+.titulo-about-us {
+  position: relative;
+  top: 0px;
+  left: 500px;
+  letter-spacing: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: white;
+  font-size: 50px;
+  text-align: left;
+}
+
+.subtitle {
+  color: #cdcece;
+  font-size: 18pt;
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  right: 400px;
+  letter-spacing: 20pt;
+}
+
+.more {
+  font-weight: 400;
+}
+
+.about-us-text {
+  color: #cdcece;
+  font-size: 15pt;
+  font-weight: 300;
+  line-height: 30pt;
+  position: absolute;
+  top: 405px;
+  left: 200px;
+  right: 700px;
+  text-align: left;
+}
+
+/* 1er separador */
+
+#first-separator {
+  background: url(../images/photos/Destacado.jpg);
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+}
+
+/* products */
+#products {
+  background: rgb(255, 254, 254);
+  flex-direction: column;
+  position: relative;
+  height: 110vh;
+}
+
+.title-nuestros-porductos,
+#product-slider {
+  float: left;
+  width: 100%;
+}
+
+.title-nuestros-porductos {
+  color: #a5abad;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#products a {
+  align-self: center;
+  background: #a5abad;
+  color: #ffffff;
+  display: block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 38px;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+#product-slider.swiper-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15vw;
+  overflow: hidden;
+  width: 70vw;
+}
+
+#product-slider .swiper-wrapper {
+  display: flex;
+}
+
+.product.swiper-slide {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product span {
+  font-family: "Source Code Pro", monospace;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+#kanu-font {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+}
+
+#kanu-font:hover {
+  background-color: #003b4a;
+}
+
+/* Second-separator*/
+#eventos {
+  background: url(../images/photos/Eventos.jpg);
+  position: relative;
+  background-size: cover;
+}
+
+.eventos h2 {
+  color: #cdcece;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 35pt;
+  letter-spacing: 15pt;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.eventos span {
+  color: #fefefe;
+  font-size: 13pt;
+  width: 30vw;
+  line-height: 25pt;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+}
+
+/* Franquicias */
+.franquicias {
+  background: #cdcece;
+  position: relative;
+  height: auto;
+}
+
+#franquicias {
+  height: 80vh;
+}
+
+.franquicias h2 {
+  color: #535456;
+  font-style: italic;
+  font-size: 25pt;
+  letter-spacing: 10pt;
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
+
+.franquicias p {
+  color: #535456;
+  font-weight: 500;
+  line-height: 20pt;
+  width: 300px;
+  position: absolute;
+  top: 250px;
+  left: 600px;
+}
+
+.franquicias a {
+  color: black;
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5pt;
+  position: absolute;
+  top: 420px;
+  left: 600px;
+}
+
+/* Contact */
+.contact {
+  background: #003b4a;
+  color: #cdcece;
+  position: relative;
+  background-image: url('../images/lines-k.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+}
+
+.contact h3 {
+  font-weight: 400;
+  letter-spacing: 15pt;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.contact form {
+  position: absolute;
+  top: 150px;
+  left: 501px;
+  width: 35vw;
+}
+
+#emailForm input,
+#emailForm textarea,
+#emailForm select,
+#emailForm input::placeholder {
+  color: #FFF;
+}
+
+#emailForm select option {
+  color: #003b4a;
+}
+
+#emailForm input,
+#emailForm select,
+#emailForm textarea {
+  background: transparent;
+  border: white thin solid;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  outline: 0;
+  padding: 10px;
+}
+
+#emailForm input::placeholder,
+#emailForm select,
+#emailForm textarea {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4px;
+}
+
+#emailForm button {
+  align-self: flex-end;
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  outline: 0;
+  transition: all 0.5s;
+  width: auto;
+}
+
+#emailForm button:hover {
+  transform: translateX(5px);
+}
+
+/* Sucursales */
+#sucursales-container {
+  align-items:center ;
+  position: relative;
+  background: #1a1a1a;
+  color: #7c7c7c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#sucursales-container h2 {
+  font-size: 30pt;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 100px;
+}
+
+#sucursales {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  align-self: center;
+  margin-right: 40px;
+}
+
+.column article {
+  margin-bottom: 40px;
+}
+
+.column article h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  align-items: center;
+  background: #003b4a;
+  color: #cdcece;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  height: 18vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.footer-socials {
+  align-items: center;
+  color: #4d7680;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.footer-socials span {
+  font-size: 55px;
+  margin: 0 20px;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
